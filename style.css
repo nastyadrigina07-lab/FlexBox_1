@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.top-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.left-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 220px; 
+    height: 200px;
+}
+
+.box-static {
+    background-color: lightblue;
+}
+
+.box-relative-1 {
+    background-color: lightgreen;
+    position: relative;
+    transform: translateX(15px);
+}
+
+.box-relative-2 {
+    background-color: pink;
+    position: relative;
+    left: 40px;
+    bottom: 50px;
+}
+
+.box-fixed-1 {
+    background-color: yellow;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.box-zindex-1 {
+    background-color: lightcoral;
+    position: absolute;
+    z-index: 5;
+    width: 140px;
+    height: 140px;
+    transform: translate(10px, 10px);
+}
+
+.box-zindex-2 {
+    background-color: lightseagreen;
+    position: absolute;
+    z-index: 4;
+    width: 140px;
+    height: 140px;
+    transform: translate(70px, 70px);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: lightgray;
+    margin-left: 20px;
+}
+
+.box-absolute-1 {
+    background-color: coral;
+    position: absolute;
+    z-index: 3;
+    width: 110px;
+    height: 110px;
+    transform: translate(20px, 20px);
+}
+
+.box-absolute-2 {
+    background-color: skyblue;
+    position: absolute;
+    z-index: 2;
+    width: 110px;
+    height: 110px;
+    transform: translate(60px, 60px);
+}
+
+.box-absolute-3 {
+    background-color: purple;
+    position: absolute;
+    z-index: 1;
+    width: 110px;
+    height: 110px;
+    transform: translate(120px, 120px);
+}
+
+.box-fixed-2 {
+    background-color: orange;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+}
